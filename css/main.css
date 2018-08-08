@@ -1,0 +1,138 @@
+.header {
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #3b8dbd;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+.header #logo {
+    display: block;
+    height: 50px;
+    padding-top: 10px;
+    /*float: left;*/
+    /*margin-left:40px;*/
+    /*text-align: left;*/
+    font-family: "Oswald", sans-serif;
+    font-size: 45px;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.headerlogo{
+    float: left;
+    padding: 0 30px;
+}
+.subtitle{
+    text-align: center;
+    color: white;
+    font-family: Georgia, "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+.brand{
+    color: white;
+    font-size: 45px;
+    margin-left: 100px;
+
+
+   
+}
+.icon{
+    height:100px ;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 30px ;
+} 
+.header nav {
+    display: inline=block;
+    float: right;
+    margin-right:50px;
+}
+.header nav a {
+    line-height: 150px;
+    margin-left: 20px;
+    color: #9fdbfc;
+    font-weight: 700;
+    font-size: 18px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header nav a:hover {
+    color: white;
+}
+.header.smaller {
+    height: 75px;
+}
+.header.smaller h1#logo {
+    width: 150px;
+    height: 75px;
+    font-size: 30px;
+}
+.header.smaller nav a {
+    line-height: 75px;
+}
+
+/*-----------MEDIA QUERIES*/
+@media all and (max-width: 660px) {
+    .header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height:100px;
+        text-align: center;
+    }
+    .header nav {
+        display: block;
+        float: none;
+        height: 50px;
+        line-height:50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    .header.smaller {
+        height: 75px;
+    }
+    .header.smaller h1#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    .header.smaller nav {
+        height: 35px;
+        line-height:35px;
+    }
+    .header.smaller nav a {
+        line-height: 35px;
+    }
+}
+.mainbody{
+    padding-top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
