@@ -60,7 +60,7 @@
     text-align: center;
 }
 .mainbody{
-    margin-top: 120px;
+    margin-top: 130px;
 }
 .brandpagetop{
     margin-top: 130px;
@@ -224,12 +224,24 @@
     margin: 0; 
     padding: 0;
     }
+    .topnews{
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #b22222;
+    font-size: 25px;
 
+    }
     .card-margin{
-      margin-top: 20px;
-      margin-left: 100px;
-      margin-right: 100px;
-      margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+
+    }
+    .topcard-margin{
+    margin-top: 20px;
+    margin-bottom: 20px;
 
     }
     .itemsyousai {
@@ -242,6 +254,16 @@
     }
     .buy{
       margin-top: 55px;
+    }
+    .caption{
+      margin-top: 40px;
+      margin-right: 20px;
+      color: #696969;
+    }
+    .sampleotoiawase{
+      margin-top: 40px;
+      font-size: 25px;
+
     }
     .itemamount{
       font-size: 25px;
