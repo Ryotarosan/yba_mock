@@ -10,25 +10,25 @@
 <script src="js/bootstrap.min.js"></script>
 <script  type="text/javascript" src="js/main.js" charset="uft-8"></script>
 <head>
-  <title>page_edit</title>
+  <title>item_edit</title>
 </head>
 <body>
-<body>
 <div class="container-fluid header">
- <div class="row">
+  <div class="row">
     <div class="col-md-3 headerlogo">
       <a href="#"><h1 id="logo" > TSUNAGERU </h1>
       <p class="subtitle">-ツナゲル-</p></a>
     </div>
-  <div class="col-md-4">
-  </div>
+    <div class="col-md-4">
+    </div>
       <!-- <nav class="navbar navbar-default"> -->
   <div class="col-md-4 menu" >
     <div class="dropdown">
       <a class="dropbtn">横井様</a>
       <div class="dropdown-content">
-        <a href="#">マイページ</a>
-        <a href="#"></a>
+        <a href="#">登録情報</a>
+        <a href="#">管理画面</a>
+        <a href="#">ページ編集</a>
         <a href="#">ログアウト</a>
       </div>
     </div>
@@ -38,7 +38,7 @@
     <div class="dropdown">
     <a class="dropbtn">MENU</a>
      <div class="dropdown-content">
-      <a href="#">TSYNAGERUとは</a>
+      <a href="#">TSUNAGERUとは</a>
       <a href="#">よくある質問</a>
       <a href="#">お問い合わせ</a>
       <a href="#">退会</a>
@@ -47,275 +47,113 @@
   </div>
  </div>
 </div>
-<div class="container-fluid brandpagetop">
- <div class="row ">
-<div class="col-md-2 " >
-      <div class="card userprofile">
-        <img class="card-img-top" src="picture/aaa.png" >
-         <div class="card-body">
-           <h5 class="card-title">The Pud2ing　 <a href="#"><i class="far fa-thumbs-up"></i></a></h5>
-           <p class="card-text">Designer  Yuki Yokoi</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted"><button type="button" class="btn">メッセージを送る</button></small>
-         </div>
-       </div>
 
-    <div class="btn-group btngroup">
-      <button type="button" class="btn btn-primary">メンズ</button>
-      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-        <span class="caret"></span>
-      </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#">レディス</a>
-        <a class="dropdown-item" href="#">キッズ</a>
-        <a class="dropdown-item" href="#">その他</a>
+<!-- うえokay -->
+<div class="container-fluid mainbody">
+  <div class="row ">
+      <div class="col-md-7 itemedit_left">
+
+        <input  class="osirasenyuuryoku" type="text" placeholder="お知らせ入力">
+
+
+        <div class="card-deck card-margin">
+          <div class="card ">
+            <div class="amount ">
+            <img class="card-img-top " src="picture/501.jpg" >
+              <div class="maru size_normal pink1">
+              <p class="letter3">30</p>
+              </div>
+              <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>13</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">High Count Wool Jacket</h5>
+              <p class="card-text">着用サイズ：L</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">ウール100％ならではの膨らみと柔らかさ。<br>「素材そのもの」のストレッチ性。</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-deck subpicture">
+            <div class="card">
+              <img class="card-img-top " src="picture/501.jpg" >
+              <p class="card-text">カーキ</p>
+            </div>
+
+             <div class="card">
+              <img class="card-img-top" src="picture/502.jpg" >
+              <p class="card-text">グレー</p>
+             </div>
+
+             <div class="card">
+              <img class="card-img-top" src="picture/503.jpg" >
+              <p class="card-text">ネイビー</p>
+             </div>
+        </div>
+
+        <div class="card-deck subpicture">
+          <div class="card">
+            <img class="card-img-top " src="picture/504.jpg" >
+            <p class="card-text">バックスタイル</p>
+          </div>
+
+
+           <div class="card">
+            <img class="card-img-top" src="picture/507.jpg" >
+            <p class="card-text">ディテール</p>
+           </div>
+
+           <div class="card">
+            <img class="card-img-top" src="picture/508.jpg" >
+            <p class="card-text">ディテール</p>
+           </div>
+        </div>
       </div>
+
+    <div class="col-md-5 itemsyousai">
+
+      <select class=seibetu>
+      <option  selected>メンズ</option>
+      <option >レディース</option>
+      <option >メンズ・レディース</option>
+      <option >キッズ</option>
+      </select>
+      <h5 class= >ブランド　：The Pud2ing</h5>
+      <h5>カテゴリ　：<select >
+      <option >アウター/ジャケット</option>
+      <option >パンツ</option>
+      <option >カットソー</option>
+      <option >Tシャツ</option>
+      <option >オールインワン</option>
+      <option >スカート</option>
+      <option >ワンピース</option>
+      <option >スーツ</option>
+      <option >バッグ</option>
+      <option >シューズ</option>
+      <option >雑貨</option>
+      </select>
+      </h5>
+
+      <h5>アイテム名：<input class="syousaiBOX" type="text" placeholder="アイテム名"></h5>
+      <h5>アイテムNo：<input class="syousaiBOX" type="text" placeholder="アイテムNo"></h5>
+      <h5>希望上代　：<input class="syousaiBOX" type="text" placeholder="¥20,000"></h5>
+      <h5>卸価格　　：<input class="syousaiBOX" type="text" placeholder="@10,000"></h5>
+      <h5>納期　　　：<input class="syousaiBOX" type="text" placeholder="9/30"></h5>
+      <h5>ミニマム　：<input class="syousaiBOX" type="text" placeholder="40枚"></h5>
+      <h5>カラー　　：<input class="syousaiBOX" type="text" placeholder="ブラック、ホワイト、グレー"></h5>
+      <h5>サイズ　　：<input class="syousaiBOX" type="text" placeholder="S、M、L"></h5>
+      <h5>受注〆日　：<input class="syousaiBOX" type="text" placeholder="6/25"></h5>
+
+      <textarea class="syouhinsetumei" rows="10" cols="60">商品説明</textarea>
+
+
     </div>
-    <ol class="menulist">
-      <li><a href="#">新着</a></li>
-      <li><a href="#">ブランド</a></li>
-      <li><a href="#">コーディネート</a></li>
-      <li><a href="#">納期</a></li>
-      <li><a href="#">受注〆</a></li>
-      <hr>
-      <li><a href="#">トップス</a></li>
-      <li><a href="#">アウター/ジャケット</a></li>
-      <li><a href="#">パンツ</a></li>
-      <li><a href="#">オールインワン</a></li>
-      <li><a href="#">スカート</a></li>
-      <li><a href="#">ワンピース</a></li>
-      <li><a href="#">スーツ</a></li>
-      <li><a href="#">バッグ</a></li>
-      <li><a href="#">シューズ</a></li>
-      <li><a href="#">雑貨</a></li>
-    </ol>
-    <div class="box11">
-      <p>ニュース編集</p>
-    </div>
-</div>
-    <div class="col-md-7 ">
-      <div class="row">
-        <h1 class="col-md-9 brandname">アイテム登録　</h1>
-        <div class="col-md-3 ofi"><a href="#">自社ページ登録</a></div>
-      </div>
-      <div class="itemamount align">アイテム数: 18</div>
-      <!-- <div class="col-md-10"> -->
-  <div class="card-deck topcard-margin">
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/5.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">カットソー</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期６/中</small>
-         </div>
-       </div>
+  </div> <!-- row -->
+</div> <!--container -->
 
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/510.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">デニム</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期５/中</small>
-         </div>
-       </div>
-
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/5.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">カットソー</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期６/中</small>
-         </div>
-       </div>
-
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/510.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">デニム</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期５/中</small>
-         </div>
-       </div>
-     </div>
-
-  <div class="card-deck topcard-margin">
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/5.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">カットソー</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期６/中</small>
-         </div>
-       </div>
-
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/510.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">デニム</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期５/中</small>
-         </div>
-       </div>
-
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/5.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">カットソー</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期６/中</small>
-         </div>
-       </div>
-
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/510.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">デニム</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期５/中</small>
-         </div>
-       </div>
-  </div>
-
-  <div class="card-deck topcard-margin">
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/5.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">カットソー</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期６/中</small>
-         </div>
-       </div>
-
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/510.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">デニム</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期５/中</small>
-         </div>
-       </div>
-
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/5.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">カットソー</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期６/中</small>
-         </div>
-       </div>
-
-      <div class="card">
-        <div class="amount">
-          <img class="card-img-top" src="picture/510.jpg" >
-          <div class="maru size_normal pink1">
-            <p class="letter3">25</p>
-          </div>
-          <p class="iconincard"><a href="#"><i class="far fa-thumbs-up fa-2x"></i></a>29</p>
-        </div>
-         <div class="card-body">
-           <h5 class="card-title">hhhhh</h5>
-           <p class="card-text">デニム</p>
-         </div>
-         <div class="card-footer">
-           <small class="text-muted">納期５/中</small>
-         </div>
-       </div>
-    </div>
-  <!-- </div> -->
-    </div>
- <div class="col-md-3">
- </div>
 <div class="container-fluid footer">
- <div class="row">
+  <div class="row">
   <div class="col-md-2 footericon">
     <div class="row">
    <div class="col-md-3"> <a href="#"><i class="fas fa-home fa-2x"></i></a></div>
@@ -328,7 +166,7 @@
     <div><a href="#">会社概要</a>　　　<a href="#">利用規約</a>　　　<a href="#">お問い合わせ</a>　　　<a href="#">個人情報保護方針</a>　　　<a href="#">特定商取引法に基づく表示</a></div>
 
   </div>
- </div>
+  </div>
 </div>
 
 
