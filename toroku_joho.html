@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script  type="text/javascript" src="js/main.js" charset="uft-8"></script>
+<head>
+  <title>toroku_joho</title>
+</head>
+<body>
+<div class="container-fluid header">
+  <div class="row">
+    <div class="col-md-3 headerlogo">
+      <a href="#"><h1 id="logo" > TSUNAGERU </h1>
+      <p class="subtitle">-ツナゲル-</p></a>
+    </div>
+  <div class="col-md-4">
+  </div>
+      <!-- <nav class="navbar navbar-default"> -->
+    <div class="col-md-4 menu" >
+      <div class="dropdown">
+        <a class="dropbtn">横井様</a>
+        <div class="dropdown-content">
+        <a href="#">登録情報</a>
+        <a href="#">管理画面</a>
+        <a href="#">ページ編集</a>
+        <a href="#">ログアウト</a>
+      </div>
+    </div>
+    <!-- テキストデコレーション　none -->
+    <a class="dropbtn none" href="#">ログイン</a>
+    <a class="dropbtn none" href="#">会員登録</a>
+      <div class="dropdown">
+      <a class="dropbtn">MENU</a>
+       <div class="dropdown-content">
+        <a href="#">TSUNAGERUとは</a>
+        <a href="#">よくある質問</a>
+        <a href="#">お問い合わせ</a>
+        <a href="#">退会</a>
+       </div>
+      </div>
+    </div>
+ </div>
+</div>
+
+<div class="container-fluid mainbody">
+  <div class="row">
+    <div class="col-md-5">
+    </div>
+    <div class="col-md-2">
+      <h2 style="text-align: center; margin-bottom: 20px;">登録情報</h2>
+        <div class="card userprofile margin-bottom30">
+            <img class="card-img-top" src="picture/noimage.png" >
+        </div>
+    </div>
+    <div class="col-md-5">
+        <div class="BOXinPosition"><input class="gyoukan" id="dummy_file" type="text" >
+              <label for="filename" >
+                <span class="browse_btn">ファイル選択</span><input type="file" id="filename">
+              </label>
+              <input type="submit" class="botanmitame" value="登録">
+        </div>
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid centerhaiti">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <input class="syousaiBOX margin-bottom16" type="text" placeholder="登録画面で登録した名前">
+        <input class="syousaiBOX margin-bottom16" type="text" placeholder="登録画面で登録したemail">
+        <input class="syousaiBOX margin-bottom16" type="text" placeholder="会社名（任意）">
+        <input class="syousaiBOX margin-bottom16" type="text" placeholder="コメント（任意）">
+        <input class="syousaiBOX margin-bottom16" type="text" placeholder="コメント（任意）">
+        <input class="syousaiBOX margin-bottom16" type="text" placeholder="コメント（任意）">
+        <p><button type="button" class="btn btn-outline-secondary">変更</button></p>
+        <p><button type="button" class="btn btn-outline-secondary">パスワード変更</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="container-fluid footer">
+  <div class="row">
+    <div class="col-md-2 footericon">
+      <div class="row">
+        <div class="col-md-3"> <a href="#"><i class="fas fa-home fa-2x"></i></a></div>
+        <div class="col-md-3"> <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></div>
+        <div class="col-md-3"> <a href="#"><i class="fab fa-instagram fa-2x"></i></a></div>
+        <div class="col-md-3"> <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></div>
+      </div>
+    </div>
+    <div class="col-md-10 footermenu text-center">
+      <div><a href="#">会社概要</a>　　　<a href="#">利用規約</a><a href="#">個人情報保護方針</a>　　　<a href="#">特定商取引法に基づく表示</a>
+      </div>
+
+  </div>
+ </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){ 
+$('#filename').on("change", function() {
+var file = this.files[0];
+if(file != null) {
+document.getElementById("dummy_file").value = file.name;
+} 
+});
+if (document.form1.filename.value == "") {
+document.getElementById("dummy_file").value = "";
+}
+});
+</script>
+
+</body>
+</html>

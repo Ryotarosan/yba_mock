@@ -234,8 +234,8 @@
     }
     .card-margin{
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 130px;
+    margin-right: 130px;
     margin-bottom: 20px;
 
     }
@@ -332,12 +332,20 @@
 .amount {/*親div*/
   position: relative;/*相対配置*/
   }
-
+.amount2 {/*親div*/
+  position: relative;/*相対配置*/
+  }
 .amount div{
   position: absolute;/*絶対配置*/
   color: black;
   bottom: 0px;
   right: 0px;
+  }
+  .amount2 div{
+  position: absolute;/*絶対配置*/
+  color: black;
+  bottom: 5px;
+  /*height: 60px;*/
   }
 .amount>p {
   position: absolute;/*絶対配置*/
@@ -466,9 +474,9 @@ color: #fff;
 .tourokubtn{
 text-align: center;
 margin-top: 100px;
-margin-bottom:300px;
+margin-bottom:20px;
 }
-.listpicture{
+.listpicture>img{
 width:50px;
 }
 .SideBySide {
@@ -509,15 +517,57 @@ margin-bottom: 30px;
     margin-right:auto;
 }
 */
+.itemtourokubtn{
+text-align: center; 
+    line-height: 75px;
+}
+@media screen { #filename { display: none; } }
+.browse_btn {
+background-color: #d3d3d3;
+padding: 5px;
+border-radius: 8px;
+font-weight: bold;
+}
+.botanmitame{
+background-color: #d3d3d3;
+padding: 5px;
+border-radius: 8px;
+font-weight: bold;
+}
 
+.gyoukan{
+    margin-bottom: 5px;
+}
 
+.centerhaiti{
+    text-align: center;
+}
+.margin-bottom16{
+    margin-bottom:16px;
+}
+.margin-bottom30{
+    margin-bottom:30px;
+}
+.margin-bottom200{
+    margin-bottom:200px;
+}
+.picturesize1{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:700px;
+}.picturesize2{
+    width:auto;
+    height:auto;
+    max-width:100%;
+    max-height:300.45px;
+}
 
+.BOXinPosition{
+    position: relative;
+    top: 180px;
 
-
-
-
-
-
+}
 
 
 
