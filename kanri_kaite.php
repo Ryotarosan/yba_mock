@@ -1,52 +1,23 @@
+<?php 
+session_start();
+if(!isset($_SESSION['id'])){
+header('Location: top.php');
+exit();
+}
+
+
+
+
+
+ ?>
 <!DOCTYPE html>
-<html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script  type="text/javascript" src="js/main.js" charset="uft-8"></script>
+<html lang="ja">
 <head>
+  <?php include('head.php'); ?>
   <title>kanri_kaite</title>
 </head>
 <body>
-<div class="container-fluid header">
-  <div class="row">
-    <div class="col-md-3 headerlogo">
-      <a href="#"><h1 id="logo" > TSUNAGERU </h1>
-      <p class="subtitle">-ツナゲル-</p></a>
-    </div>
-  <div class="col-md-4">
-  </div>
-      <!-- <nav class="navbar navbar-default"> -->
-    <div class="col-md-4 menu" >
-      <div class="dropdown">
-        <a class="dropbtn">横井様</a>
-        <div class="dropdown-content">
-        <a href="#">登録情報</a>
-        <a href="#">管理画面</a>
-        <a href="#">ページ編集</a>
-        <a href="#">ログアウト</a>
-      </div>
-    </div>
-    <!-- テキストデコレーション　none -->
-    <a class="dropbtn none" href="#">ログイン</a>
-    <a class="dropbtn none" href="#">会員登録</a>
-    <div class="dropdown">
-    <a class="dropbtn">MENU</a>
-     <div class="dropdown-content">
-      <a href="#">TSUNAGERUとは</a>
-      <a href="#">よくある質問</a>
-      <a href="#">お問い合わせ</a>
-      <a href="#">退会</a>
-     </div>
-    </div>
-  </div>
- </div>
-</div>
+<?php include('header.php'); ?>
 
 <div class="container-fluid mainbody">
   <div class="row">
@@ -68,7 +39,7 @@
             </thead>
             <tbody>
               <tr>
-                <td><img class="listpicture" src="picture/5.jpg" ></td>
+                <td><img class="listpicture2" src="picture/5.jpg" ></td>
                 <td>apc</td>
                 <td>Black apc</td>
                 <td>6/30</td>
@@ -76,7 +47,7 @@
                 <td>¥60,000</td>
               </tr>
               <tr>
-                <td><img class="listpicture" src="picture/503.jpg" ></td>
+                <td><img class="listpicture2" src="picture/503.jpg" ></td>
                 <td>The pud2ing</td>
                 <td>jacket</td>
                 <td>6/30</td>
@@ -84,7 +55,7 @@
                 <td>¥150,000</td>
               </tr>
               <tr>
-                <td><img class="listpicture" src="picture/5.jpg" ></td>
+                <td><img class="listpicture2" src="picture/5.jpg" ></td>
                 <td>apc</td>
                 <td>Black apc</td>
                 <td>6/30</td>
@@ -92,7 +63,7 @@
                 <td>¥60,000</td>
               </tr>
               <tr>
-                <td><img class="listpicture" src="picture/5.jpg" ></td>
+                <td><img class="listpicture2" src="picture/5.jpg" ></td>
                 <td>apc</td>
                 <td>Black apc</td>
                 <td>6/30</td>
@@ -146,35 +117,35 @@
             </thead>
             <tbody>
               <tr>
-                <td><img class="listpicture" src="picture/503.jpg" ></td>
+                <td><img class="listpicture2" src="picture/503.jpg" ></td>
                 <td>The pud2ing</td>
                 <td>jacket</td>
                 <td>201812432</td>
                 <td>2018/8/30</td>
               </tr>
               <tr>
-                <td><img class="listpicture" src="picture/503.jpg" ></td>
+                <td><img class="listpicture2" src="picture/503.jpg" ></td>
                 <td>The pud2ing</td>
                 <td>jacket</td>
                 <td>201812432</td>
                 <td>2018/8/30</td>
               </tr>
               <tr>
-                <td><img class="listpicture" src="picture/503.jpg" ></td>
+                <td><img class="listpicture2" src="picture/503.jpg" ></td>
                 <td>The pud2ing</td>
                 <td>jacket</td>
                 <td>201812432</td>
                 <td>2018/8/30</td>
               </tr>
               <tr>
-                <td><img class="listpicture" src="picture/503.jpg" ></td>
+                <td><img class="listpicture2" src="picture/503.jpg" ></td>
                 <td>The pud2ing</td>
                 <td>jacket</td>
                 <td>201812432</td>
                 <td>2018/8/30</td>
               </tr>
               <tr>
-                <td><img class="listpicture" src="picture/503.jpg" ></td>
+                <td><img class="listpicture2" src="picture/503.jpg" ></td>
                 <td>The pud2ing</td>
                 <td>jacket</td>
                 <td>201812432</td>
@@ -183,41 +154,9 @@
            </tbody>
           </table>
 
-
-
-
-
-
-
-
-
-
-
     </div>
   </div>
 </div>
-
-
-
-<div class="container-fluid footer">
-  <div class="row">
-    <div class="col-md-2 footericon">
-      <div class="row">
-        <div class="col-md-3"> <a href="#"><i class="fas fa-home fa-2x"></i></a></div>
-        <div class="col-md-3"> <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></div>
-        <div class="col-md-3"> <a href="#"><i class="fab fa-instagram fa-2x"></i></a></div>
-        <div class="col-md-3"> <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></div>
-      </div>
-    </div>
-    <div class="col-md-10 footermenu text-center">
-      <div><a href="#">会社概要</a>　　　<a href="#">利用規約</a><a href="#">個人情報保護方針</a>　　　<a href="#">特定商取引法に基づく表示</a>
-      </div>
-
-  </div>
- </div>
-</div>
-
-
-
+<?php include('footer.php'); ?>
 </body>
 </html>

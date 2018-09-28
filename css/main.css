@@ -2,7 +2,7 @@
     width: 100%;
     height: 90px;
     /*overflow: hidden;*/
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
     z-index: 999;
@@ -63,7 +63,7 @@
     margin-top: 130px;
 }
 .brandpagetop{
-    margin-top: 130px;
+    margin-top: 125px;
 }
 .userprofile{
     width:95%;
@@ -117,7 +117,7 @@
 }
 .dropbtn{
    line-height: 120px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     color:white ;
     font-weight: 700;
     font-size: 18px;
@@ -341,7 +341,7 @@
   bottom: 0px;
   right: 0px;
   }
-  .amount2 div{
+.amount2 div{
   position: absolute;/*絶対配置*/
   color: black;
   bottom: 5px;
@@ -478,6 +478,16 @@ margin-bottom:20px;
 }
 .listpicture>img{
 width:50px;
+object-fit: contain;
+}
+
+.listpicture2{
+width:50px;
+}
+.kakuninpicture{
+max-width:300px;
+max-height: :300px;
+object-fit: cover;
 }
 .SideBySide {
  display:inline-block;
@@ -519,10 +529,11 @@ margin-bottom: 30px;
 */
 .itemtourokubtn{
 text-align: center; 
-    line-height: 75px;
+line-height: 75px;
 }
 @media screen { #filename { display: none; } }
 .browse_btn {
+
 background-color: #d3d3d3;
 padding: 5px;
 border-radius: 8px;
@@ -535,7 +546,7 @@ border-radius: 8px;
 font-weight: bold;
 }
 
-.gyoukan{
+.margin-bottom5{
     margin-bottom: 5px;
 }
 
@@ -568,14 +579,32 @@ font-weight: bold;
     top: 180px;
 
 }
+.blockcenter:{
+margin-left: auto;
+margin-right: auto;
+}
 
+.word-wrap{
+word-wrap: break-word;
+}
 
+form img.thumb {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+}
 
+.max-width300{
+    max-width: 300px;
+    text-align: center;
+    margin:auto;
+}
 
-
-
-
-
-
-
+.hogehogehoge{
+    display: inline-block;
+    margin-top: 1px;
+}
+label.huga{
+    margin-bottom: 1px;
+}
 
